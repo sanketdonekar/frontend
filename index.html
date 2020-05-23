@@ -35,12 +35,13 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p class="text-justify">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm alig align-self-center">
-                    <img src="img/logo.png" alt="" class="image-fluid">
+                <div class="col-sm-6">
+                        <img src="img/logo.png" class="alig align-self-start col-sm-5" alt="" class="image-fluid">
+                        <a href="#bookingform"><button onclick="" type="button" class="btn btn-sm btn-warning col-sm-5 align-self-end">Reserve Table</button></a>
                 </div>
             </div>
         </div>
@@ -66,8 +67,17 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block text-justify">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block text-justify">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <div class="media-body">
+                        <div class="d-flex">
+                            <img src="img/buffet.png" alt="buffet" class="ml-3 image-thumbnail align-self-center">
+                        </div>    
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -86,7 +96,64 @@
                 </div>
             </div>
         </div>
-    </div>
+        <br>
+        <div class="row d-flex justify-content-center" id="bookingcard">
+            <div class="border">
+                    <h2 class=" card card-header bg-warning text-white">Reserve a Table</h2>
+                    <div class="card-body" id="">
+                        <form action="" class="" id="bookingform">
+                            <div class="row">
+                                <div class="form-group col-sm-2">
+                                    <label>Number of Guests</label> 
+                                </div>
+                                <div class="col-sm-6">
+                                    <span>
+                                        <input type="radio"> 1
+                                    </span>
+                                    <span>
+                                        <input type="radio"> 2
+                                    </span>
+                                    <span>
+                                        <input type="radio"> 3
+                                    </span>
+                                    <span>
+                                        <input type="radio"> 4
+                                    </span>
+                                    <span>
+                                        <input type="radio"> 5
+                                    </span>
+                                    <span>
+                                        <input type="radio"> 6
+                                    </span>
+                                </div>
+                            </div><br>
+                            <div class="row">
+                                <div class="form-group col-sm-2">
+                                    <label for="">Date and Time</label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-group row">
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="date" name="firstname" placeholder="Date">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="time" name="firstname" placeholder="Time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div>
+                            <div class="offset-md-2">
+                                <button type="submit" class="btn btn-primary">
+                                    Reserve
+                                </button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <br>
 
     <footer class="footer">
         <div class="container">
@@ -135,3 +202,5 @@
 </body>
 
 </html>
+
+

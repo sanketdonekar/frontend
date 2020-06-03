@@ -6,13 +6,27 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scss": "sass css/styles.scss css/styles.css",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* --out-dir dist/img ",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@popperjs/core": "^2.4.0",
+    "chai": "^4.2.0",
+    "cssmin": "^0.4.3",
+    "eslint": "^7.1.0",
     "lite-server": "^2.3.0",
-    "sass": "^1.26.7"
+    "onchange": "^7.0.2",
+    "parallelshell": "^3.0.2",
+    "rimraf": "^2.6.2",
+    "sass": "^1.26.7",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
